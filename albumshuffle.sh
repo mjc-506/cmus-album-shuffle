@@ -22,6 +22,9 @@
 # Matt Collins 02May2016
 
 # set up 'mode' files:
+if [ ! -d ~/.cmus ]; then # to store subsequent values
+	mkdir ~/.cmus
+fi
 if [ ! -f ~/.cmus/mode ]; then # to track whether we're playing an album, or changing
         echo "PLAYING" > ~/.cmus/mode
 fi
